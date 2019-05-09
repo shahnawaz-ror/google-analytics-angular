@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { GoogleChartsModule } from 'angular-google-charts';
 import { AgmCoreModule } from '@agm/core';
 import { HomeComponent } from './home/home.component';
 import { RealtimeComponent } from './realtime/realtime.component';
@@ -14,7 +13,7 @@ import { RealtimeTrafficSourceComponent } from './realtime-traffic-source/realti
 import { RealtimeContentComponent } from './realtime-content/realtime-content.component';
 import { RealtimeEventsComponent } from './realtime-events/realtime-events.component';
 import { RealtimeConversionComponent } from './realtime-conversion/realtime-conversion.component';
-
+import { GoogleChartsModule } from 'angular-google-charts';
 
 
 @NgModule({
@@ -36,7 +35,8 @@ import { RealtimeConversionComponent } from './realtime-conversion/realtime-conv
     GoogleChartsModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCz8ohv96hqj_4JmaP_SBt90sU23d3qBiY'
-    })
+    }),
+    GoogleChartsModule.forRoot('AIzaSyCPaXmYrffVdZar7YHnt7Jj8W7FUOI_OhM')
   ],
   providers: [],
   bootstrap: [AppComponent]

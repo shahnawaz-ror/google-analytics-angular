@@ -107,23 +107,20 @@
             </google-chart>
           </div>
         </div>
-        <div class="row">
-          <div class="container-fluid shadow-lg p-3 mb-5 bg-white rounded">
-            <div class="col-sm-4 col-lg-4 col-md-4">
-              
-            </div>
-            <div class="col-sm-4 col-lg-4 col-md-4">
-              <google-chart #chart
-                 [title]="stacked_title"
-                 [type]="stacked_type"
-                 [data]="stacked_data"
-                 [columnNames]="stacked_columnNames"
-                 [options]="stacked_options"
-                 [width]="width"
-                 [height]="height">
-              </google-chart>
-            </div>
-            <div google-chart chart="chart"></div>
+        <div class="row shadow-lg p-3 mb-5 bg-white rounded">
+          <div class="col-sm-4 col-lg-4 col-md-4">
+            <google-chart #chart
+                [title]="stacked_title"
+                [type]="stacked_type"
+                [data]="stacked_data"
+                [columnNames]="stacked_columnNames"
+                [options]="stacked_options"
+                [width]="width"
+                [height]="height">
+            </google-chart>
+          </div>
+          <div class="col-sm-8 col-lg-8 col-md-8">
+              <google-chart [data]="myData" type="GeoChart" [columnNames]="myColumnNames" [options]="myOptions" width="900" height="500"></google-chart>
           </div>
         </div>
         <div class="row">

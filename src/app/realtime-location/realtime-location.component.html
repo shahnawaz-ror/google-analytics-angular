@@ -43,64 +43,56 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-4 col-md-4 col-lg-4">
-      that works
+    <div class="col-sm-4 col-md-4 col-lg-4 shadow-lg p-3 mb-5 bg-white rounded">
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th colspan="2">Active Pages</th>
+                <th colspan="2">Active Users</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>/Google+Redes...Mens+T+Shirts</td>
+                <td>7888</td>
+                <td>21.43%</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>/Google+Redesign/Accessories</td>
+                <td>1000</td>
+                <td>21.43%</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>/Google+Redes...Mens+T+Shirts</td>
+                <td>77777</td>
+                <td>21.43%</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>/Google+Redes...Mens+T+Shirts</td>
+                <td>77777</td>
+                <td>21.43%</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>/Google+Redes...Mens+T+Shirts</td>
+                <td>77777</td>
+                <td>21.43%</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>/Google+Redes...Mens+T+Shirts</td>
+                <td>77777</td>
+                <td>21.43%</td>
+              </tr>
+            </tbody>
+          </table>
     </div>
-    <div class="col-sm-8 col-md-8 col-lg-8 shadow-lg p-3 mb-5 bg-white rounded">
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th colspan="2">Active Pages</th>
-            <th colspan="2">Active Users</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>/Google+Redes...Mens+T+Shirts</td>
-            <td>7888</td>
-            <td>21.43%</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>/Google+Redesign/Accessories</td>
-            <td>1000</td>
-            <td>21.43%</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>/Google+Redes...Mens+T+Shirts</td>
-            <td>77777</td>
-            <td>21.43%</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>/Google+Redes...Mens+T+Shirts</td>
-            <td>77777</td>
-            <td>21.43%</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>/Google+Redes...Mens+T+Shirts</td>
-            <td>77777</td>
-            <td>21.43%</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>/Google+Redes...Mens+T+Shirts</td>
-            <td>77777</td>
-            <td>21.43%</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-4 col-md-4 col-lg-4 front-dashboard shadow-lg p-3 mb-5 bg-white rounded">
-      Another works
-    </div>
-    <div class="col-sm-8 col-md-8 col-lg-8 front-dashboard shadow-lg p-3 mb-5 bg-white rounded">
-      Another works
+    <div class="col-sm-8 col-md-8 col-lg-8  shadow-lg p-3 mb-5 bg-white rounded">
+      <google-chart [data]="myData" type="GeoChart" [columnNames]="myColumnNames" [options]="myOptions" width="900" height="500"></google-chart>
     </div>
   </div>
 </div>

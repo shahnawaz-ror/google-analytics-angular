@@ -32,5 +32,18 @@ export class RealtimeOverviewComponent implements OnInit {
   ngOnInit() {
     
   }
+  myData = [
+    ['Germany', 200],
+    ['United States', 300],
+    ['Brazil', 400],
+    ['Canada', 500],
+    ['France', 600],
+    ['RU', 700]
+  ];
+  myColumnNames =     ['Country', 'Popularity'];
+  myOptions = {
+    displayMode: 'markers',
+    colorAxis: {colors: ['green', 'blue']}
+  };
 
 }
