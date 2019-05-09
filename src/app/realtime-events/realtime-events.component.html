@@ -1,95 +1,95 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-4 col-md-4 col-lg-4 shadow-lg p-3 mb-5 bg-white rounded">
-      <div class="container">
-        <div align="center">
-          Right Now
-          <h6>50</h6>
-          Active users on the site
-        </div>
-        <div class="progress">
-          <div class="progress-bar progress-bar-warning" role="progressbar" style="width:80%;background-color: red;">
-            80%
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-4 col-md-4 col-lg-4 shadow-lg p-3 mb-5 bg-white rounded">
+        <div class="container">
+          <div align="center">
+            Right Now
+            <h6>50</h6>
+            Active users on the site
           </div>
-          <div class="progress-bar progress-bar-danger" role="progressbar" style="width:20%; background-color: green;">
-            20%
+          <div class="progress">
+            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:80%;background-color: red;">
+              80%
+            </div>
+            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:20%; background-color: green;">
+              20%
+            </div>
           </div>
         </div>
       </div>
+      <div class="col-sm-4 col-md-4 col-lg-4 front-dashboard shadow-lg p-3 mb-5 bg-white rounded">
+        <div class="front-dashboard">Page views</div>
+        <google-chart #chart
+            [title]="coulumn_title"
+            [type]="coulumn_type"
+            [data]="coulumn_data"
+            [columnNames]="coulumn_columnNames"
+            [options]="coulumn_options"
+            [width]="width"
+            [height]="height">
+        </google-chart>
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-4 front-dashboard shadow-lg p-3 mb-5 bg-white rounded">
+        <div class="front-dashboard">Page views per seconds</div>
+        <google-chart #chart
+            [title]="coulumn_title"
+            [type]="coulumn_type"
+            [data]="coulumn_data"
+            [columnNames]="coulumn_columnNames"
+            [options]="coulumn_options"
+            [width]="width"
+            [height]="height">
+        </google-chart>
+      </div>
     </div>
-    <div class="col-sm-4 col-md-4 col-lg-4 front-dashboard shadow-lg p-3 mb-5 bg-white rounded">
-      <div class="front-dashboard">Page views</div>
-      <google-chart #chart
-          [title]="coulumn_title"
-          [type]="coulumn_type"
-          [data]="coulumn_data"
-          [columnNames]="coulumn_columnNames"
-          [options]="coulumn_options"
-          [width]="width"
-          [height]="height">
-      </google-chart>
-    </div>
-    <div class="col-sm-4 col-md-4 col-lg-4 front-dashboard shadow-lg p-3 mb-5 bg-white rounded">
-      <div class="front-dashboard">Page views per seconds</div>
-      <google-chart #chart
-          [title]="coulumn_title"
-          [type]="coulumn_type"
-          [data]="coulumn_data"
-          [columnNames]="coulumn_columnNames"
-          [options]="coulumn_options"
-          [width]="width"
-          [height]="height">
-      </google-chart>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 shadow-lg p-3 mb-5 bg-white rounded">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th colspan="2">Active Pages</th>
+              <th colspan="2">Active Users</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>/Google+Redes...Mens+T+Shirts</td>
+              <td>7888</td>
+              <td>21.43%</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>/Google+Redesign/Accessories</td>
+              <td>1000</td>
+              <td>21.43%</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>/Google+Redes...Mens+T+Shirts</td>
+              <td>77777</td>
+              <td>21.43%</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>/Google+Redes...Mens+T+Shirts</td>
+              <td>77777</td>
+              <td>21.43%</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>/Google+Redes...Mens+T+Shirts</td>
+              <td>77777</td>
+              <td>21.43%</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>/Google+Redes...Mens+T+Shirts</td>
+              <td>77777</td>
+              <td>21.43%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-sm-12 col-md-12 col-lg-12 shadow-lg p-3 mb-5 bg-white rounded">
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th colspan="2">Active Pages</th>
-            <th colspan="2">Active Users</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>/Google+Redes...Mens+T+Shirts</td>
-            <td>7888</td>
-            <td>21.43%</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>/Google+Redesign/Accessories</td>
-            <td>1000</td>
-            <td>21.43%</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>/Google+Redes...Mens+T+Shirts</td>
-            <td>77777</td>
-            <td>21.43%</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>/Google+Redes...Mens+T+Shirts</td>
-            <td>77777</td>
-            <td>21.43%</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>/Google+Redes...Mens+T+Shirts</td>
-            <td>77777</td>
-            <td>21.43%</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>/Google+Redes...Mens+T+Shirts</td>
-            <td>77777</td>
-            <td>21.43%</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</div>

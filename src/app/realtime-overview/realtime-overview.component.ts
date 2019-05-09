@@ -33,7 +33,7 @@ export class RealtimeOverviewComponent implements OnInit {
     
   }
   myData = [
-    ['Germany', 200],
+    ['Germany', 800],
     ['United States', 300],
     ['Brazil', 400],
     ['Canada', 500],
